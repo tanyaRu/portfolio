@@ -20,10 +20,10 @@ setInterval(function() {
 
 //hover "contact me button"
 $('.trigger').hover(function() {
- $(".trigger").css("background-color", "#d93e2d"); // mouse on
+ $(".trigger").css("background-color", "#aa7755"); // mouse on
  }, 
  function () {
-$(".trigger").css("background-color", "#1b337a"); // mouse out
+$(".trigger").css("background-color", "#a1978e"); // mouse out
 });
 
 //window height header
