@@ -10,18 +10,18 @@ position: absolute;
 left: 0;
 display: none;
 background: #fefdfb;
-width: 400px;
-height: 300px;
+width: 300px;
+height: 200px;
 border:2px solid #a1978e;
-padding: 30px 100px 30px 30px;
+padding: 20px 90px 20px 20px;
 -moz-border-radius-bottomright: 20px;
 -webkit-border-bottom-right-radius: 20px;
-opacity: 0.9;
+z-index:1;
 }
 .panel p{
-margin: 0 0 15px 0;
+margin-top:40px; 
 padding: 0;
-color: #cccccc;
+color: #222222;
 }
 
 .panel a:hover, .panel a:visited:hover{
@@ -45,6 +45,7 @@ background: #a1978e;
 -moz-border-radius-bottomright: 20px;
 -webkit-border-bottom-right-radius: 20px;
 display: block;
+z-index:2;
 }
 
 a.active.trigger {
@@ -52,6 +53,23 @@ background:#d44039;
 color: white;
 }
 
+#emaillink{
+color:#c57434;
+font: 400 90px/1.3 'Bree Serif', Georgia, serif;
+font-size: 20px;
+text-decoration:none;
+}
+#emaillink:hover { 
+    color: #fd3862;
+}
+
+#arrowContact{
+width: 50px;
+height:50px;
+float:right;
+margin-top: -20px;
+
+}
 /* 
 .header-image{
   background-position: 50%;
@@ -141,21 +159,30 @@ padding-top: 0;
 	
 }
 .bucket{
-width: 960px;
+width: 550px;
 height: auto;
-margin-top: 50px;
+margin-top: 70px;
 margin-right: auto;
 float: left;
 }
 .colortext{
-font-size: 50px;
-font-weight:500;
+font-size: 40px;
+font-weight:400;
 }
 #logo{
-margin-top: 50px;
-width: 200px;
+margin-top: 70px;
+margin-left: 50px;
+width: 300px;
+height: 453;
 float: left;
 }
+#skillsPic{
+width: 150px;
+margin-top: 90px;
+margin-right: 90px;
+float: right;
+}
+
 .Mytext{
 text-indent: 10px;
 text-align: left;
@@ -185,27 +212,27 @@ text-shadow: 1px 1px 2px white;
 
 
 #menu {
-	padding: 15px;
+	padding: 10px;
 }	
 #social_icons {
     margin: 0 auto;
-    width: 280px;
-    height: 86px;
+    width: 250px;
+    height: 47px;
     text-align: center;
 }
 
 ul#menu li a {
-	width: 80px;
-    height: 82px;
+	width: 47px;
+    height: 47px;
     display: block;
-    background: url('../img/social-media.png') no-repeat; /* As all link share the same background-image */
-}	
+    background: url('../img/icons/socialMedia1.png') no-repeat; /* As all link share the same background-image */
+	}	
 
 ul#menu li {
 float: left;
-padding-top: 30px;
+padding-top: 40px;
 display: block;
-margin: auto;
+margin: 0 10px;
 }
 
 ul#menu li#instagram a {
@@ -213,36 +240,38 @@ ul#menu li#instagram a {
 }
 
 #instagram a:hover {
-    background: url('../img/hover.png') 0 0;
+    background: url('../img/icons/socialMedia2.png') 0 0;
 }
 
 ul#menu li#twitter a {
-    background-position: -83px 0;
+    background-position: -60px 0;
 }
 
 #twitter a:hover {
-    background: url('../img/hover.png') -83px 0;
+    background: url('../img/icons/socialMedia2.png') -60px 0;
 }
 
 ul#menu li#dribbble a {
-    background-position: -165px 0;
+    background-position: -120px 0;
 }
 
 #dribbble a:hover {
-    background: url('../img/hover.png') -165px 0;
+    background: url('../img/icons/socialMedia2.png') -120px 0;
 }
+
 
 #foot{
 background: #222222;
-height: 200px;
+height: 170px;
 width:auto;
 }
 
 #footerh5{
 color: #fff;
 text-align: center;
-padding-top: 20px;
+padding-top: 40px;
 clear: both;
+margin:0;
 }
 
 #scrollDown{
@@ -252,9 +281,21 @@ height: 100px;
 width: 100px;
 margin-top: 18%;
 margin-left: 480px;
-
 }
 
 #scrollDown:hover{
 background: url('../img/icons/hoverScroll.png');
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none; 
+    background: url('../img/icons/Scroll-Top.png') no-repeat;
+	width: 70px;
+	height: 70px;
+    padding: 1em;
+    display: none;
+}
+
